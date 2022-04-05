@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import allGiftCards from "./data/db";
+import React from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App container mt-5">
+      
+      <div className="row m-0">
+      {allGiftCards.map(x => 
+      <div className="card col-sm-12 col-md-4 col-lg-3 m-2  bg-primary">
+        <div className="text-white mb-3" >
+          <div className="card-header">ID : {x.id}</div>
+          <div className="card-body">
+            <h5 className="card-title">{x.title}</h5>
+            <p className="card-text">Currencies</p>
+            <ul class="list-group list-group-flush" style={
+              {
+                display : "flex",
+                flexDirection : "row",
+                flexWrap : "wrap"
+              }
+            }>
+            {
+              x.currencies.map(curr => {       
+               return  <small className="mx-2">{curr}</small>
+              })
+            }
+            </ul>
+          </div>
+        </div>
+        </div>
+        )}
+      </div>
+      
     </div>
   );
 }
