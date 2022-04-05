@@ -3,11 +3,11 @@ import React from "react";
 
 function App() {
   return (
-    <div className="App container mt-5">
+    <div className="App container mt-5 d-flex w-100 justify-content-center align-items-center">
       
       <div className="row m-0">
       {allGiftCards.map(x => 
-      <div className="card col-sm-12 col-md-4 col-lg-3 m-2  bg-primary">
+      <div className="card col-md-4 col-lg-3 m-1  bg-primary">
         <div className="text-white mb-3" >
           <div className="card-header">ID : {x.id}</div>
           <div className="card-body">
