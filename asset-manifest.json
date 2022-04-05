@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kodeCampT/static/css/main.e6c13ad2.css",
+    "main.js": "/kodeCampT/static/js/main.3c328ede.js",
+    "index.html": "/kodeCampT/index.html",
+    "main.e6c13ad2.css.map": "/kodeCampT/static/css/main.e6c13ad2.css.map",
+    "main.3c328ede.js.map": "/kodeCampT/static/js/main.3c328ede.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.3c328ede.js"
+  ]
+}
